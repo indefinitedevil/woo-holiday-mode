@@ -39,7 +39,7 @@ class Woo_Holiday_Mode {
             <form action="options.php" method="post">
                 <?php
                 settings_fields('woo_holiday_mode');
-                do_settings_sections('woo_holiday_mode';
+                do_settings_sections('woo_holiday_mode');
                 submit_button(__('Save settings', 'woo_holiday_mode'));
                 ?>
             </form>
@@ -177,4 +177,4 @@ class Woo_Holiday_Mode {
     }
 }
  
-add_action('plugins_loaded', array(Woo_Product_Report::class, 'setup'));
+add_action('plugins_loaded', array(Woo_Holiday_Mode::class, 'setup'));
